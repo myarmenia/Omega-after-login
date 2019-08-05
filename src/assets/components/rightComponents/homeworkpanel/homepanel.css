@@ -1,0 +1,24 @@
+.homework_panel {
+ /* background-color: #277886;*/
+  width: 83%;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  top: 63px;
+  padding: 1px 0 15px;
+}
+
+.homework_panel_heading {
+  color: burlywood;
+  font-weight: 900;
+  padding: 5px;
+  font-size: 15px;
+  font-family: monospace;
+  margin-bottom: 0;
+}
+
+.home-navigation {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

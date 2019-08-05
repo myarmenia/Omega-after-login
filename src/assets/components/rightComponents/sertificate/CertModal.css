@@ -1,0 +1,189 @@
+.modal-wrap {
+  background: rgba(50, 48, 66, 0.51);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.modal-wrap.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-wrap .modal-container {
+  background: #fff;
+  margin: 1em;
+  max-width: 100%;
+  width: 600px;
+  z-index: 100;
+}
+
+.modal-wrap .modal-container .modal-header,
+.modal-wrap .modal-container .modal-footer {
+  background: #000;
+  float: left;
+  width: 100%;
+}
+
+.modal-wrap .modal-header .modal-title-cert {
+      color: #fff;
+      float: left;
+      font-size: 2.2rem;
+      margin: 0;
+      padding: 3% 0% 3% 0%;
+      width: 75%;
+      text-shadow: 2px 2px 5px #86e458;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+.modal-wrap .modal-header .close-modal {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  font-size: 40px;
+  opacity: 0.4;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+
+  position: relative;
+  top: 0;
+}
+
+.modal-wrap .modal-header .close-modal:hover {
+  opacity: 1;
+}
+
+.modal-wrap .modal-content-cert {
+  float: left;
+  margin: 0 auto;
+  padding: 15px 5%;
+  width: 100%;
+  color: black;
+}
+.modal-content-cert h3 {
+  margin: 0;
+  padding-top: 0;
+}
+
+.modal-content-cert p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.modal-wrap .modal-content-cert p:last-child {
+  margin-bottom: 0;
+}
+
+.modal-wrap .modal-footer {
+  text-align: center;
+}
+
+.modal-wrap .modal-footer p {
+  color: #ccc;
+  font-size: 12px;
+  font-style: italic;
+  margin: 4px;
+}
+
+.modal-wrap .modal-footer a {
+  color: #fff;
+}
+
+.open-modal-msg {
+  color: #49fb9a;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px #3a3939;
+  display: inline-block;
+
+  -webkit-animation-name: animani;
+  animation-name: animani;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes fontGrow {
+  0% {
+    font-size: 14px;
+  }
+  50% {
+    font-size: 16px;
+  }
+  100% {
+    font-size: 14px;
+  }
+}
+
+@keyframes animani {
+  0% {
+    /*font-size: 20px*/
+    transform: scale(1.5, 1);
+  }
+  50% {
+    /*font-size: 25px*/
+    transform: scale(1.7, 1.6);
+  }
+  100% {
+    /*font-size: 25px*/
+    transform: scale(1.5, 1);
+  }
+}
+
+.modal-btn {
+    border: none;
+    cursor: pointer;
+    margin: 6px 2px 2px;
+    font-weight: 600;
+    padding: 6px 16px;
+    color: white;
+    font-size: 17px;
+}
+
+.action-btn {
+  background-color: #11909c;
+}
+.close-btn {
+  background-color: #d83fbf;
+}
+
+.share-container {  
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 2px;
+    text-align: center;
+    max-height: 36px;
+    overflow: hidden;
+    position: relative;
+    bottom: -6px;
+}

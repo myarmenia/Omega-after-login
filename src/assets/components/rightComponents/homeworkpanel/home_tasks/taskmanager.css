@@ -1,0 +1,76 @@
+.taskmanager-wrap {
+  position: relative;
+}
+
+.task-container {  
+  list-style: none;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(247, 247, 247);
+  width: 160px;
+  /* color: grey; */
+  margin: 0;
+
+  /* top: -75px; */
+  border: 1px dotted #d2d2d2;
+  border-radius: 2px;
+}
+
+.task-item {
+  padding: 2px 8px;
+  border-bottom: 1px solid;
+  transition: all 0.4s;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-item:hover {
+  background-color: #5050502e;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item-name {
+  border: 2px solid #277886;
+  border-radius: 3px;
+  padding: 4px 6px;
+  color: #337ab7;
+  transition: all 0.4s;
+  font-weight: 600;
+  min-width: 103px;
+}
+
+.task-item-code {
+  border: 2px solid #277886;
+  border-radius: 3px;
+  transition: all 0.4s;
+  padding: 1px;
+  margin: 0;
+}
+
+.task-item-name:hover,
+.task-item-code:hover {
+  color: white;
+  border: 2px solid #277886;
+  background-color: #e07c05;
+}
+
+
+.show-lesson-tasks-btn {
+  padding: 6px 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-weight: 700;  
+  display: inline-block;
+  transition: all 0.4s;
+}
+
+.show-lesson-tasks-btn:hover {
+  color: #23527c;
+  background-color: #ffffff;
+}
+

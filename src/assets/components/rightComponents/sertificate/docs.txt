@@ -1,0 +1,20 @@
+CertModal.js - UnityPointer.js ում, ամեն կուրսի վերջում։
+SertBlock.js - use_coins.js ում, ամեն unlock անելուց պռոգրեսսով ցույց է տալիս թե որքան մնաց, որ ստանաս սերտիֆիկատ։
+
+
+
+ունեմ դրված կլասներ UnityPointer.js ֊ի ռենդեռում։
+
+<div className="levelCompleted finishLastGame">
+</div>
+
+և 
+
+<div className="levelCompleted CourseComplet veradarz">
+</div>
+
+այս կլասների անունները ասում են, թե տվյալ դիվային բլոկը երբ է երևում։
+Օրինակ՝ "levelCompleted finishLastGame" ֊ վերջին փուլի վերջին խաղն է։
+        "levelCompleted CourseComplet"  ֊ կուրսի վերջին լեվելն է։
+
+        

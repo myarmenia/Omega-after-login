@@ -1,0 +1,138 @@
+.armmirror2,
+.lessmirror2 {
+  background-color: #69d4cbdb;
+  padding: 5px;
+  width: 80vw;
+  position: absolute;
+  z-index: 333;
+  box-shadow: 0px 0px 19px 2px #193a46;
+  top: 84px;
+  left: -11.5%;
+}
+
+.lessmirror2 {
+  top: 140px;
+  left: -9%;
+  background-color: #67a2b9db;
+}
+
+.armmirror2-header,
+.lessmirror2-header {
+  cursor: move;
+  font-weight: 900;
+  margin: 0;
+  padding: 4px 0;
+  background-color: #f0f8ffad;
+  color: black;
+}
+
+.selected-task {
+  position: absolute;
+  left: 15px;
+  font-size: 15px;
+  color: darkmagenta;
+}
+
+.close-mirror2-btn,
+.close-mirror-btn,
+.close-message-btn {
+  color: #28656d;
+  float: right;
+  font-size: 29px;
+  font-weight: bold;
+  line-height: 75%;
+  position: absolute;
+  right: 9px;
+  top: 6px;
+}
+.close-mirror2-btn:hover,
+.close-mirror-btn:hover,
+.close-mirror2-btn:focus,
+.close-mirror-btn:focus,
+.close-message-btn:hover,
+.close-message-btn:focus
+ {
+  color: #00bcd4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close-message-btn:hover,
+.close-message-btn:focus {
+  color: #f1f1f1;
+}
+
+.close-message-btn {
+  position: relative;
+  right: -10px;
+  top: 0px;
+}
+
+.editor-btn-group {
+  margin: 4px 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.editor-btn,
+.select-template,
+.select-task {
+  border: 1px solid white;
+  padding: 1px 4px;
+  cursor: pointer;
+  background-color: #99839b;
+  transition: all 0.4s;
+}
+
+.select-template,
+.select-task {
+  padding: 2px 3px;
+  outline: none;
+}
+
+.editor-btn:hover {
+  background-color: #ffffff;
+  color: #99839b;
+}
+
+.mailer-response {
+  position: absolute;
+  left: 40%;
+  font-size: 16px;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0px 1px 3px #bdb2b2;
+  border: 1px solid #3791a0;
+  min-width: 186px;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.edit-and-preview {
+  display: flex;
+  justify-content: center;
+}
+
+.edit {
+  width: 49%;
+  /* float: left; */
+  /* font-size: 12px; */
+}
+
+#preview,
+#preview2 {
+  width: 49%;
+  height: 350px;
+  border: 1px solid #ababab;
+  border-left: 0px;
+  background-color: white;
+}
+
+.CodeMirror {
+  height: 350px !important;
+}
+
+.task-wrap {
+  z-index: 1;
+}
+

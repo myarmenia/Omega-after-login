@@ -1,0 +1,102 @@
+.contest {
+    position: relative;
+}
+.ocf-timer-wrap {
+  flex-direction: row;
+  align-items: center;
+}
+
+.ocf-timer {
+  color: #ffffff;
+  border: 1px solid #dcdcdc;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c2c5b;
+  position: absolute;
+  width: 250px;
+  top: 50px;
+  left: 0px;
+
+}
+
+.deadline-btn {
+  padding: 6px 8px;
+  background-color: #607d8b;
+  outline: none;
+  border: 1px solid #8ec2d4;
+  border-radius: 5px;
+}
+
+.cd-1 {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cd-2 {
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.my-rating {
+  padding: 5px 8px;
+  border: 2px solid #cad8d8;
+  margin-left: 8px;
+  background-color: #d22e31;
+  border-radius: 100%;
+  display: block;
+}
+.my-rating a {
+  padding: 0;
+  color: #fcf065;
+}
+
+
+.ocf-not-valid,
+.ocf-finish {
+  color: #f32d13;
+  z-index: 100;
+  position: absolute;
+  height: 107vh;
+  font-size: 20px;
+  background-color: #211919b8;
+  text-shadow: 1px 1px 2px #3b2861;
+  font-family: monospace;
+  font-weight: 600;
+  width: 120vw;
+  padding: 30vh 30vw;
+  left: -30vw;
+  top: -30px;
+}
+.ocf-finish {
+  color: #63da68;
+  padding: 25vh 25vw;
+}
+
+.not-valid-txt {
+  background-color: #2d4063cc;
+  padding: 30px 15px;
+}
+
+.ocf-finish a {
+  display: inline;
+  padding: 0;
+  color: #33d2d2;
+}
+
+.ocf-finish-btn-wrap {
+  margin-top: 40px;
+  font-size: 16px;
+  background-color: #152a40eb;
+  padding: 15px;
+}
+
+.ocf-finish-btn {
+  margin: 15px auto;
+  border: 1px solid grey;
+  width: 30%;
+  padding: 10px;
+  background-color: #2f5354;
+  cursor: pointer;
+}

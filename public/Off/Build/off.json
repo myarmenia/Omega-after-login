@@ -1,0 +1,14 @@
+{
+"companyName": "am.webex.game",
+"productName": "AllBuildsAndroid",
+"dataUrl": "off.data.unityweb",
+"asmCodeUrl": "off.asm.code.unityweb",
+"asmMemoryUrl": "off.asm.memory.unityweb",
+"asmFrameworkUrl": "off.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "off.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF"
+}

@@ -1,0 +1,109 @@
+@import 'header.scss';
+@import 'mixins.scss';
+@import 'leftSide.scss';
+@import 'rightSide.scss';
+@import 'canvas.scss';
+
+*{
+  margin: 0;
+  padding:0;
+}
+
+html{
+  height:100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height:100%;
+  font-family: verdana,sans-serif;
+ // background-color: rgb(0, 161, 255);
+ // @include bgImage();
+}
+.logo {
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-image: url("../images/logo.png");
+  background-position: center;
+  height: 65px;
+  width: 100%; }
+
+.logo_small {
+  background-repeat: no-repeat;
+  background-size: 72%;
+  background-image: url("../images/smallLogo.png"); }
+
+
+#root{
+  height: 100%;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+#canvasBackground{
+  background-image:linear-gradient(0deg, #8592a1, #f9f5f5);
+  /*background-image: -ms-linear-gradient(top, rgb(0, 108, 154) 0%, rgb(0, 105, 132) 100%);
+  background-image: -moz-linear-gradient(top, rgb(0, 108, 154) 0%, rgb(0, 105, 132) 100%);
+  background-image: -o-linear-gradient(top, rgb(0, 108, 154) 0%, rgb(0, 105, 132) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(0, 108, 154)), color-stop(100, rgb(0, 105, 132)));
+  background-image: -webkit-linear-gradient(top, rgb(0, 108, 154) 0%, rgb(0, 105, 132) 100%);
+  background-image: linear-gradient(to bottom, rgb(0, 108, 154) 0%, rgb(0, 105, 132) 100%);*/
+}
+
+
+.mainContainer{
+  height:100%;
+  width:100%;
+  display: flex;
+}
+
+.left{
+  width:17%;
+}
+
+.right{
+  width:83%;
+}
+
+.mainItems{
+  transition: .5s;
+}
+
+@media (max-width: 998px) {
+  .left {
+    width:8% !important;
+  }
+  .headerButtons {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    right: 30%;
+  }
+  .right{
+    width:92% !important;
+  }
+}
+
+@media (max-width: 498px) {
+  .headerButtons {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    right: 30%;
+  }
+  .left {
+    display: none;
+  }
+  .right{
+    width:100% !important;
+  }
+}
+

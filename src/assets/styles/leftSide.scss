@@ -1,0 +1,119 @@
+@import 'mixins.scss';
+/*
+
+.leftSideContainer{
+  background-color:  rgba(6, 44, 91,.9);
+  box-shadow: -3px 0 54px #163333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/menuImg.png);
+  background-repeat: no-repeat;
+  background-position-y:bottom;
+  background-size: 95%;
+}
+*/
+.leftSideContainer {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.93);
+  -webkit-box-shadow: -3px 0 54px #000000;
+  box-shadow: -3px 0 54px #000000;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/menuImg.png');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: 95%;
+  width: inherit;
+}
+
+
+.logo{
+  @include bgImage($bgSize:85%);
+  background-image: url('../images/logo.png');
+  background-position: center;
+  height: 65px;
+  width: 100%;
+}
+.logo_small{
+  @include bgImage($bgSize:72%);
+  background-image: url('../images/smallLogo.png');
+
+}
+
+.menuContainer{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+}
+
+.menuList{
+  color:azure;
+  list-style-type:none;
+  padding: 0;
+  width:100%;
+}
+
+
+.menuItem{
+  display: flex;
+  align-items:center;
+  height:40px;
+  border-bottom:.1px inset #2e6c75;
+  cursor: pointer;
+  transition: .4s;
+  white-space: nowrap;
+  &:hover{
+    background-color: rgba(11, 146, 240, 0.47)!important;
+  }
+}
+
+.menuItemIcon{
+  width:20%;
+  display: flex;
+  justify-content:center;
+}
+
+.menuItemText{
+  width:80%;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+
+@media (max-width: 998px){
+ /* .logo{
+    background-size: 383%;
+    background-position: 0 center;
+    width: 45px;
+    transition: .5s;
+  } */
+  .logo{
+    @include bgImage($bgSize:72%);
+    background-image: url('../images/smallLogo.png');
+    width: 45px;
+    transition: .5s;
+  }
+
+  .menuItem{
+    justify-content:center;
+  }
+
+  .menuItemText{
+    display: none;
+  }
+
+}
+@media (max-width: 448px){
+  .menuContainer{
+    position: absolute;
+  }
+
+}

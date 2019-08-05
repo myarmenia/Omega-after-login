@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompanyppppp",
+"productName": "3dUsucoxakan",
+"dataUrl": "MultiGl.data.unityweb",
+"asmCodeUrl": "MultiGl.asm.code.unityweb",
+"asmMemoryUrl": "MultiGl.asm.memory.unityweb",
+"asmFrameworkUrl": "MultiGl.asm.framework.unityweb",
+"TOTAL_MEMORY": 134217728,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

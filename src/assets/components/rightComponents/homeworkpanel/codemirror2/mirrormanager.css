@@ -1,0 +1,15 @@
+.show-mirror-btn,
+.show-mirror2-btn {
+  padding: 6px 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-weight: 700;  
+  display: inline-block;
+  transition: all 0.4s;
+}
+
+.show-mirror-btn:hover,
+.show-mirror2-btn:hover {
+  color: #23527c;
+  background-color: #ffffff;
+}

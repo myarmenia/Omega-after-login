@@ -1,0 +1,116 @@
+@import 'mixins.scss';
+
+$height:65px;
+/*
+.header {
+  height: $height;
+  width: 100%;
+  background: rgba(2, 39, 87, .9);
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+}*/
+.header {
+  z-index: 78;
+  height: 65px;
+  width: 101%;
+ // width: -webkit-fill-available;
+ // width: -moz-available;
+  background: rgba(0, 0, 0, 0.93);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: unset;
+  position: fixed;
+  color:white;
+}
+.info_letters_Icon {
+ border: 2px solid #009494;
+  background-color: #006b94;
+  height: 43px;
+  width: 44px;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  border-radius: 100%;
+  text-transform: uppercase;
+  padding: 9px;
+  /* position: relative; */
+  font-weight: 800;
+  color: azure;
+  cursor: pointer;
+}
+.span_c{
+  padding: 0 2px;
+  position: relative;
+  left: -2px;
+  text-shadow: 3px 1px 0px black
+}
+.span_d{
+  padding: 0 2px;
+  position: relative;
+  left: -13px;
+  text-shadow: 3px 1px 0px black
+}
+
+.new_d {
+  border: thin solid #8EC2D4;
+  text-align: center;
+  display: flex;
+  font-family: sans-serif;
+  padding: 4px 3px 3px 3px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: fit-content;
+  height: 34px;
+  background-color: #607D8B;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 5px 2px 3px black;
+}
+.new_c {
+  border: thin solid #8EC2D4;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: sans-serif;
+  padding: 4px 3px 3px 11px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 34px;
+  background-color: #607D8B;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 5px 2px 3px black;
+}
+.menuIcon{
+  color:azure;
+}
+/*
+.headerButtons{
+  display: flex;
+  align-items: center;
+}*/
+.headerButtons {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  right: 19%;
+}
+.mainScore{
+  margin: 14px;
+  font-size: 1.2em;
+}
+
+
+
+.scoreImg_coin{
+  margin-left: 12px;
+  vertical-align: middle;
+}

@@ -1,0 +1,18 @@
+.code-high-lighter {
+  margin: 10px auto;
+  width: 97%;
+  z-index: 1;
+}
+
+pre {
+  padding: 1.5px !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 20px !important;
+}
+pre code {
+  text-align: left !important;
+  padding: 10px !important;
+  background-color:#020f18 !important;
+  border-radius: 10px;
+}

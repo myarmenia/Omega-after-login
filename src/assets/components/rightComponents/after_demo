@@ -1,0 +1,25 @@
+const start_game =(event,uid,gameType)=>{
+    if(!event){
+        let oper=7;
+        let demo_over = `unique_id=${encodeURI(uid)}&operation=${encodeURI(oper)}&game_type=${encodeURI(gameType)}`;
+        fetch(`https://omegacoding.com/android_test/userProgressManager.php`,{
+            method:'POST',
+            headers:{"Content-type":"application/x-www-form-urlencoded",'Accept':'application/json'},
+            body: demo_over
+        }).then(response => {
+            if(response.ok){
+                //  console.log(response,"responseresponseresponseresponse");
+                return response.json();
+            }
+        }).then(response => {
+                         return response
+
+        }).catch( error => {
+            console.log(error,"error");
+        });
+
+    }
+
+};
+
+export {start_game};

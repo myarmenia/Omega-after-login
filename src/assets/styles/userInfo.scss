@@ -1,0 +1,63 @@
+@import 'mixins.scss';
+
+.userInfoContainer{
+  position: fixed;
+  height:250px;
+  width:300px;
+
+  top: 66px;
+  right: 17px;
+  display: flex;
+  flex-direction:column;
+  z-index:1500
+}
+
+.infoTop{
+  height:80%;
+  //background-color: rgba(173, 216, 230, .8);
+   background-color:  rgba(45, 132, 179, 0.33);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}
+.infoGame{
+  height:80%;
+ // background-color: rgba(173, 216, 230, .8);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.infoBottom{
+  height: 20%;
+  background-color: rgba(20, 58, 63, .8);
+}
+
+.avatar{
+  height: 120px;
+  width: 120px;
+  border:5px solid #025a98;
+  border-radius: 50%;
+ // background-image: url('../images/avatar.png');
+  //@include bgImage();
+}
+
+.gamecontent{
+  height: 120px;
+  width: 120px;
+  border:5px solid #78ccd7;
+  border-radius: 30%;
+ //background-image: url('../images/avatar.png');
+ // @include bgImage();
+}
+
+
+.buttonsContainer{
+  display: flex;
+  height:100%;
+}
+
+.userInfoButtons{
+}

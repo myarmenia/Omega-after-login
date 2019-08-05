@@ -1,0 +1,37 @@
+.codemanager-wrap {
+  margin-top:40px auto;
+}
+
+.code-container {
+  position: absolute;
+  background-color:#277886; /* #3dad79a8; */
+  margin-top: 24px; /*10px*/
+  width: 100%;
+  z-index: 200;
+  border: 3px solid #e07c05;
+  border-radius: 18px;
+  left: 0;
+}
+
+.show-lesson-code-btn, 
+.download-lesson-code-btn {
+  padding: 6px 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-weight: 700;  
+  display: inline-block;
+  transition: all 0.4s;
+}
+
+.download-lesson-code-btn {
+  vertical-align: bottom;
+  padding: 2px;
+  color: white;
+}
+
+
+.show-lesson-code-btn:hover,
+.download-lesson-code-btn:hover {
+  color: #23527c;
+  background-color: #ffffff;
+}

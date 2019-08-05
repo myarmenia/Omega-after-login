@@ -1,0 +1,247 @@
+
+.arrow{
+  color:white;
+ /*// display: block;*/
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  width: 280px;
+  margin-left: -140px;
+  margin-top: 35px;
+  text-align: center;
+  font-size: 14px;
+  transform: translateZ(0);
+  z-index: 50;
+  cursor:pointer;
+}
+
+@keyframes arrow-animate{
+  0%, 100% {
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: translate(0,-6px);
+    -moz-transform: translate(0,-6px);
+    -ms-transform: translate(0,-6px);
+    -o-transform: translate(0,-6px);
+    transform: translate(0,-6px);
+  }
+}
+.jpe{
+  display:'none'!important;
+  position: absolute;
+  z-index: 0;
+  transform: rotate(-36deg);
+  top: 24vh;
+  left: 44vw;
+}
+.jpeg{
+  position: absolute;
+  z-index: 80;
+  transform: rotate(-36deg);
+  top: 24vh;
+  left: 44vw;
+}
+.code_mir{
+  position: absolute;
+  z-index: 80;
+  transform: rotate(36deg);
+  top: 24vh;
+  left: 43vw;
+}
+.answers{
+  position: absolute;
+  z-index: 80;
+  transform: rotate(0deg);
+  top: 58vh;
+  left: 43vw;
+}
+.help_btnns{
+  position: absolute;
+  z-index: 80;
+  transform: rotate(-19deg);
+  top: 10vh;
+  left: 4vw;
+}
+.arrow_anim {
+  transform-origin: center center;
+  animation: arrow-animate .5s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+body {
+  padding: 5em;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+.circle-loader {
+  margin: 0 0 30px 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-left-color: #5cb85c;
+  animation-name: loader-spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: content-box;
+}
+
+.circle-loader,
+.circle-loader:after {
+  border-radius: 50%;
+  width: 8em;
+  height: 8em;
+}
+
+.load-complete {
+  -webkit-animation: none;
+  animation: none;
+  border-color: #5cb85c;
+  transition: border 500ms ease-out;
+}
+
+.load-error {
+  -webkit-animation: none;
+  animation: none;
+  border-color: red;
+  transition: border 500ms ease-out;
+}
+
+.checkmark {
+  //display: none;
+  box-sizing: content-box;
+}
+
+.checkmark.draw:after {
+  opacity: 1;
+  height: 196px;
+  width: 86px;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 19px solid #6ee105;
+  border-top: 19px solid #6ee105;
+  content: '';
+  left: 47%;
+  top: 30%;
+
+  position: absolute;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-name: checkmark;
+  animation-name: checkmark;
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  -ms-transform: scaleX(-1) rotate(135deg);
+  transform:  translate(-28px, 38px)  scaleX(-1) rotate(135deg);
+  z-index: 12;
+}
+.checkmark.error {
+  position: absolute;
+  left: 47%;
+  top: 30%;
+  height: 196px;
+  width: 86px;
+  z-index: 12;
+}
+.checkmark.error:before, .checkmark.error:after {
+  position: absolute;
+  content: ' ';
+  height: 196px;
+  width: 22px;
+  background-color: #f00;
+}
+.checkmark.error:before {
+  transform: rotate(45deg);
+}
+.checkmark.error:after {
+  transform: rotate(-45deg);
+}
+
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+
+
+
+    height: 0;
+    width: 86px;
+    opacity: 1;
+  }
+  40% {
+    height: 196px;
+    width: 86px;
+    opacity: 1;
+  }
+  100% {
+    height: 196px;
+    width: 86px;
+    opacity: 1;
+  }
+}
+
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+
+@keyframes bounceOut {
+  20% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+.bounceOut {
+  animation-name: bounceOut;
+}

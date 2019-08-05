@@ -1,0 +1,14 @@
+.sert-message-wrap {
+  padding: 0.5rem 0.5rem;
+  width: 35vmax;
+  margin: 0 auto;
+}
+
+.sert-message-block {
+    border: 1px solid grey;
+    display: inline-grid;
+    padding: 2px 20px;
+    background-color: #cc37375e;
+    border-radius: 6px;
+    color:white
+}

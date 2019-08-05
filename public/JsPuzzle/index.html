@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | Mario</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/JsPuzzle.json", {onProgress: UnityProgress});
+  </script>
+  <script>
+      function LoadComplete(){
+          localStorage.setItem("cc9869f7b35ec38acd2d394fac43cc75", "b4b718717ff98450c77196d9808383a3");
+          localStorage.removeItem("retry");
+         const oP = document.getElementById("page-loader");
+          if (oP) {oP.parentNode.removeChild(oP);}
+
+      }
+  </script>
+
+</head>
+<body>
+<div class="webgl-content">
+  <div id="gameContainer" style="width: 100vw; height: 100vh"></div>
+  <div class="footer">
+    <div class="webgl-logo"></div>
+    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+    <div class="title">Mario</div>
+  </div>
+</div>
+</body>
+<script>
+    function GameOverGl(e){
+        localStorage.setItem("fb30df4632d7d3908952da6106296b6d", e);
+    }
+    function min_diamond(){
+        localStorage.setItem("fb30df463", "diam");
+    }
+    function buy_diamond(){
+        localStorage.setItem("buy_diamond_fb30df463", "d_f463_iam");
+    }
+</script>
+<script>
+    window.addEventListener("storage", function () {
+        // do your checks to detect
+
+        if (localStorage.getItem("retry") === "doit_p" ){
+
+            gameInstance.SendMessage('Table', 'Retry')
+        }
+
+        // changes in "e1", "e2" & "e3" here
+    }, false);
+</script>
+</html>
